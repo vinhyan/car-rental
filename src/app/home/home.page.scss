@@ -1,0 +1,65 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem 2rem 2rem;
+  gap: 1.5rem;
+}
+
+.error-group{
+  background-color: #f9d9d4;
+  color: rgb(171, 2, 2);
+  padding: 1.2rem;
+  border-radius: 5px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  color: rgb(42, 95, 72);
+}
+
+.field-group input {
+  height: 3.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  background: none;
+  width: 100%;
+}
+
+.field-group select {
+  height: 3.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  background: none;
+}
+
+.btn-group {
+  display:flex;
+  gap: 1rem;
+  
+}
+
+.btn {
+  height: 3.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.primary {
+  background-color: #337357;
+  color: whitesmoke;
+}
+
+.default {
+  background: rgb(244, 244, 244);
+  border: 1px solid gainsboro;
+}
+
+

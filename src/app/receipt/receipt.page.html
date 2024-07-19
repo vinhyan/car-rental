@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Your Receipt</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Your Receipt</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div id="container">
+    <h1 class="title">Reservation Confirmed!
+      <ion-icon name="checkmark-circle-outline"></ion-icon>
+    </h1>
+    <p><span class="lbl">Reservation Number: </span>{{reservation.reservationID}}</p>
+    <p><span class="lbl">Car Type: </span>{{reservation.vehicleType.toUpperCase()}}</p>
+    <p><span class="lbl">Length of Rental: </span>{{reservation.rentalHours}} hours</p>
+    <p><span class="lbl">Pickup Date: </span>{{reservation.reservationDate}}</p>
+    <p><span class="lbl">Car Seat Required? </span>{{reservation.carSeat ? "Yes" : "No"}}</p>
+    <p><span class="lbl">Subtotal: </span>{{reservation.subtotal | currency}}</p>
+    <p><span class="lbl">Tax: </span>{{reservation.tax | currency}}</p>
+    <p><span class="lbl">Total: </span>{{reservation.total | currency}}</p>
+
+    <button (click)="btnReservationPage()" class="btn primary">Make another Reservation</button>
+
+  </div>
+</ion-content>
